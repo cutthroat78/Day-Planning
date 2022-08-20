@@ -1,4 +1,4 @@
-<!DOCTYPE html lang=>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <style>
@@ -6,89 +6,69 @@
                 background-color: black;
                 color: white;
             }
-            .left1 {
-                float: left;
-                width: 500px;
-                height: 350px;
+            form {
+                text-align: center;
             }
-            .right1 {
-                float: right;
-                width: 500px;
-                height: 350px;
-            }
-            .left {
-                float: left;
-                width: 500px;
-            }
-            .right {
-                float: right;
-                width: 500px;
+            legend {
+                text-align: center;
             }
         </style>
         <title>Day Planning</title>
     </head>
     <body>
-        <div class="left1">
         <form>
-            <h4>Gross Times</h4>
-            <input type=time> - <input type=time>
-            <p>Total Time:<input type=time></p>
+            <fieldset>
+                <legend>Gross Time</legend>
+                <label>Starting Time to Ending Time</label><input type=time autofocus> - <input type=time> <br>
+                <label>Total Time:<input type=time></label>
+            </fieldset>
+            <fieldset>
+                <legend>Non-Working/Break Time</legend>
+                    <input type=text placeholder="E.G: Break(s)"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Meeting(s)"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: (Phone) Call(s)"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Bathroom Break(s)"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Distraction(s)"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Unexpected"> <label>Time:</label><input type=time> <br>
+                    <label>Total Non-Working Time:</label><input type=time> <br>
+                    <label>Total Time without Non-working Time:</label><input type=time> <br>
+            </fieldset>
+            <fieldset>
+                <legend>(Non-)Urgent & (Un)Important</legend>
+                <label>All Tasks:</label> <br>
+                <input type=text placeholder="E.G: Code this Website"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Photocopying"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Preparation"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Scheduling"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: (Phone) Call(s)"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Cleaning"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Start next project"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Install Software"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Make Diagram"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Setup Firewall"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Research (Something)"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+                <input type=text placeholder="E.G: Look for (Something)"> <label>Important?</label><input type=checkbox> <label>Urgent?<input type=checkbox></label><br>
+            </fieldset>
+            <fieldset>
+                <legend>To Dos</legend>
+                    <input type=text placeholder="E.G: Code this Website"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Photocopying"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Preparation"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Scheduling"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: (Phone) Call(s)"> <label>Time:</label><input type=time> <br>
+                    <input type=text placeholder="E.G: Cleaning"> <label>Time:</label><input type=time> <br>
+                    <label>Total Time Working:</label><input type=time> <br>
+                    <label>Leftover Time:</label><input type=time> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Priority Planning</legend>
+                    <label>1.</label><input type=text placeholder="E.G: Preparation"> <label>Time:</label><input type=time> <br>
+                    <label>2.</label><input type=text placeholder="E.G: Code this Website"> <label>Time:</label><input type=time> <br>
+                    <label>3.</label><input type=text placeholder="E.G: Scheduling"> <label>Time:</label><input type=time> <br>
+                    <label>4.</label><input type=text placeholder="E.G: Photocopying"> <label>Time:</label><input type=time> <br>
+                    <label>5.</label><input type=text placeholder="E.G: (Phone) Call(s)"> <label>Time:</label><input type=time> <br>
+                    <label>6.</label><input type=text placeholder="E.G: Cleaning"> <label>Time:</label><input type=time> <br>
+            </fieldset>
         </form>
-        </div>
-        <div class="right1">
-        <form>
-            <h4>Total Time: <input type=time></h4>
-            <ul>
-            <li><input type=text> Time:<input type=time></li>
-            <li><input type=text> Time:<input type=time></li>
-            <li><input type=text> Time:<input type=time></li>
-            <li><input type=text> Time:<input type=time></li>
-            <li><input type=text> Time:<input type=time></li>
-            <li><input type=text> Time:<input type=time></li>
-            <li>Total Non-Working Time:<input type=time></li>
-            <li>Total Time without Non-working Time:<input type=time></li>
-            </ul>
-        </form>
-        </div>
-        <div class="left1">
-            <form>
-                <h4>To Dos</h4>
-                <ul>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li>Total Time Working:<input type=time></li>
-                <li>Leftover Time:<input type=time></li>
-                </ul>
-            </form>
-        </div>
-        <div class="right1">
-            <form>
-                <h4>Priority Planning</h4>
-                <ol>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                <li><input type=text> Time:<input type=time></li>
-                </ol>
-            </form>
-        </div>
-        <div class="left">
-        <h2>Instructions</h2>
-        <h4>Step 1: Total Working Hours</h4>
-        <p>Write down your start and end time of your working day</p>
-        <h4>Step 2: Net Working Hours</h4>
-        <p>Subtract all routine tasks lunch, breaks, meetings, calls, emails and other interruptions from your working hours</p>
-        <h4>Step 3: Daily Achievements</h4>
-        <p>List all the important tasks you want to achieve today (incl. planned duration) and the amount of time each will take</p>
-        <h4>Step 4: Do the planning</h4>
-        <p>Number your tasks from the most important to the least important</p>
-        </div>
-        <img align="right" src="example.jpeg">
     </body>
 </html>
